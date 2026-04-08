@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^dados-(.*)$ index.php?funcao=$1 [L]
+RewriteRule ^home(.*)$ index.php [L]
+RewriteRule ^terapia(.*)$ terapia.php [L]
