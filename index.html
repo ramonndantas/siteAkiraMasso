@@ -22,25 +22,29 @@
 
 <style>
   @media (min-width: 500px) {
- .img-banner2 {
-  background-image: url(img/bannerakirainst.png) !important;
-  width: 100%;
-  height: 500px; /* aumenta a altura */
+  .img-banner2 {
+    background-image: url(img/bannerakirainst.png) !important;
+    width: 100%;
+    height: 500px;
 
-  background-size: cover; /* preenche tudo */
-  background-position: center;
-  background-repeat: no-repeat;
-}
-}
-
-
-   @media (max-width: 500px) {
-
-    .img-mobile{
-           background-image: url(img/bannerakira.png)!important;
-
-    } 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+}
+
+@media (max-width: 500px) {
+  .img-banner2 { /* usa a mesma classe */
+    background-image: url(img/bannerakira.png) !important;
+    width: 100%;
+    height: 300px; /* define altura no mobile */
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+  
 
 </style>
 </head>
